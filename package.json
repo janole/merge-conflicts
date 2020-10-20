@@ -1,18 +1,24 @@
 {
   "name": "merge-conflicts",
-  "version": "0.0.1",
-  "description": "Run git merge-tree ...",
+  "version": "0.0.3",
+  "description": "Just a quick hack to be able to check the mergability of two branches ...",
+  "license": "MIT",
+  "author": "Jan Ole Suhr <ole@mobileways.de> (https://janole.com)",
+  "homepage": "https://github.com/janole/merge-conflicts#readme",
+  "repository": "janole/merge-conflicts",
+  "bugs": "https://github.com/janole/merge-conflicts/issues",
+  "keywords": [
+    "git",
+    "merge",
+    "conflict",
+    "conflicts",
+    "cicd",
+    "ci-cd"
+  ],
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "git",
-    "merge"
-  ],
-  "author": "Jan Ole Suhr <ole@mobileways.de> (https://janole.com)",
-  "repository" : "janole/test-merge",
-  "license": "MIT"
+  }
 }
