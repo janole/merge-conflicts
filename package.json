@@ -1,5 +1,5 @@
 {
-  "name": "merge-test",
+  "name": "merge-conflicts",
   "version": "0.0.1",
   "description": "Run git merge-tree ...",
   "main": "index.js",
