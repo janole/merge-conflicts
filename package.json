@@ -1,0 +1,18 @@
+{
+  "name": "merge-test",
+  "version": "0.0.1",
+  "description": "Run git merge-tree ...",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git",
+    "merge"
+  ],
+  "author": "Jan Ole Suhr <ole@mobileways.de> (https://janole.com)",
+  "repository" : "janole/test-merge",
+  "license": "MIT"
+}
