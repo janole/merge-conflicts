@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { execSync } = require("child_process");
 
 const S = string => string.toString().replace(/[^0-9a-z-\/]/ig, "").replace(/^[^0-9a-z]/i, "");
