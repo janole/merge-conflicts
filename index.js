@@ -15,23 +15,21 @@ const lines = conflict.toString().split("\n");
 
 for (let state = 0, changed = null, i = 0; i < lines.length; i++)
 {
-	const line = lines[i];
+    const line = lines[i];
 
-        if (line === "changed in both")
-        {
-		state = 1;
-        }
-        else
-        if (state === 1)
-        {
-                state = 0;
+    if (line === "changed in both")
+    {
+        state = 1;
+    }
+    else if (state === 1)
+    {
+        state = 0;
 
-                changed = line;
-        }
-        else
-        if (line.match(/^.<<<<<+ \./))
-	{
-		console.log("CONFLICT " + changed);
-        }
+        changed = line;
+    }
+    else if (line.match(/^.<<<<<+ \./))
+    {
+        console.log("CONFLICT " + changed);
+    }
 }
 
