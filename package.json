@@ -1,6 +1,6 @@
 {
   "name": "merge-conflicts",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Just a quick hack to be able to check the mergability of two branches ...",
   "license": "MIT",
   "author": "Jan Ole Suhr <ole@mobileways.de> (https://janole.com)",
