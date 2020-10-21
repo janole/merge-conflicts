@@ -13,6 +13,8 @@ const conflict = execSync("git merge-tree " + S(base) + " " + branch1 + " " + br
 
 const lines = conflict.toString().split("\n");
 
+let conflicts = false;
+
 for (let state = 0, changed = null, i = 0; i < lines.length; i++)
 {
     const line = lines[i];
@@ -30,6 +32,9 @@ for (let state = 0, changed = null, i = 0; i < lines.length; i++)
     else if (line.match(/^.<<<<<+ \./))
     {
         console.log("CONFLICT " + changed);
+
+        conflicts = true;
     }
 }
 
+process.exit(conflicts ? -1 : 0);
