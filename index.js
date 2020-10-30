@@ -9,7 +9,7 @@ const branch2 = S(process.argv[3]);
 
 const base = execSync("git merge-base " + branch1 + " " + branch2);
 
-const conflict = execSync("git merge-tree " + S(base) + " " + branch1 + " " + branch2);
+const conflict = execSync("git merge-tree " + S(base) + " " + branch1 + " " + branch2, { maxBuffer: 128 * 1024 * 1024 });
 
 const lines = conflict.toString().split("\n");
 
