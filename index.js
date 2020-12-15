@@ -2,7 +2,7 @@
 
 const { execSync } = require("child_process");
 
-const S = string => string.toString().replace(/[^0-9a-z-_\/]/ig, "").replace(/^[^0-9a-z]/i, "");
+const S = string => string.toString().replace(/[^0-9a-z-_.\/]/ig, "").replace(/^[^0-9a-z]/i, "");
 
 const branch1 = S(process.argv[2]);
 const branch2 = S(process.argv[3]);
